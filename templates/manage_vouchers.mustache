@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row mb-3">
+    <div class="col-4 offset-8 text-right">
+      <a class="btn btn-primary" href="/payment/gateway/voucher/vouchercreate.php">Create Voucher</a>
+    </div>
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Voucher Reference</th>
+        <th scope="col">Voucher Code</th>
+        <th scope="col">Active</th>
+        <th scope="col">Voucher Max Use</th>
+        <th scope="col">Available</th>
+        <th scope="col">Used</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#trow}}
+          {{> paygw_voucher/single_voucher}}
+      {{/trow}}
+    </tbody>
+  </table>
+</div>
+
+
